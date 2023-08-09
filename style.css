@@ -1,0 +1,97 @@
+body,html{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+:root{
+    --orange:hsl(31, 77%, 52%);
+    --cyan:hsl(184, 100%, 22%);
+    --darker-cyan:hsl(179, 100%, 13%);
+    --white:hsla(0, 0%, 100%, 0.75);
+    --gray:hsl(0, 0%, 95%);
+
+}
+.main{
+    display: flex;
+    width: 70vw;
+    height: 70vh;
+
+}
+.container-left{
+    background-color: var(--orange);
+}
+.container-middle{
+    background-color:var(--cyan);
+}
+.container-right{
+    background-color: var(--darker-cyan);
+}
+.box {
+    flex: 1; 
+    padding: 5%;
+    box-sizing: border-box;
+  }
+
+.title{
+    margin: 5% 0;
+    color: var(--white);
+    font-weight: 700;
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    top: 25px;
+
+
+}
+
+
+.btn-class{
+    position: relative;
+    top: 125px;
+}
+.chunk{
+    color: var(--white);
+    font-family: "Lexend Deca", serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height:1.5;
+    letter-spacing: 1px;
+    margin-right: 10px;
+    position: relative;
+    top: 50px;
+}
+.container-right.btn-class{
+    color: var(--darker-cyan);
+}
+.container-left.btn-class{
+    color: var(--orange);
+}
+.container-right .btn{
+    color: var(--darker-cyan);
+}
+.container-middle .btn{
+    color: var(--cyan);
+}
+.container-left .btn{
+    color: var(--orange);
+}
+.btn-outline-light {
+    color: white;
+    border-color: white;
+    background-color: white;
+    transition: background-color 0.3s;
+    border-radius: 50px;
+    text-align:center;
+    font-family: "Lexend Deca", serif;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 15px;
+    width: 70%;
+    
+}
+.btn-outline-light:hover {
+    background-color: transparent;
+    color: var(--gray);
+  }
